@@ -176,30 +176,31 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero > 0){
-    console.log("es positivo");
-  }
-  else if ( numero < 0){
+  if (numero > 0) {
+    console.log("es postivio");
+  } else if ( numero < 0) {
     console.log("es negativo");
   }
-  if (numero==0){
-    return false;
-  }
- // falta terminar 
+return false;
 }
 
+// falta terminar
 
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+  var exclama = "!"
+  return str + exclama
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
+  var espacio = " "
+  return nombre + espacio + apellido
 
 }
 
