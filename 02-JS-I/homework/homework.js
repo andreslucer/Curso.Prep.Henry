@@ -213,7 +213,6 @@ function obtenerSaludo(nombre) {
   var espacio =" "
   return hola + espacio + nombre + exclamacion
 }
- obtenerSaludo("martin") 
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
@@ -240,7 +239,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  var cambiodolar = euro * 1.20
+  var cambiodolar  euro * 1.20
   return cambiodolar
 
 }
