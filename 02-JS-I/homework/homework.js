@@ -176,12 +176,7 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero > 0) {
-    console.log("es postivio");
-  } else if ( numero < 0) {
-    console.log("es negativo");
-  } else 
-return 
+  
 }
 
 // falta terminar
@@ -217,6 +212,8 @@ function obtenerSaludo(nombre) {
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
+  var cuenta = alto * ancho
+  return cuenta
 
 }
 
@@ -224,6 +221,9 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
+  var cuenta = lado * 3
+  return cuenta
+ // falta terminar  
 
 }
 
@@ -231,6 +231,8 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
+  var cuenta = (base * altura ) / 2
+  return cuenta
 
 }
 
@@ -239,8 +241,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  var cambiodolar  euro * 1.20
-  return cambiodolar
+  return euro * 1.20
 
 }
 
@@ -258,7 +259,7 @@ function esVocal(letra){
   } else if (letra !== "a" || letra !== "e" || letra !== "i" || letra !== "o" || letra !== "u"){
     console.log("dato incorrecto")
   }
- return 
+// falta terminar
 }
 
 

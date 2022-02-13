@@ -17,7 +17,14 @@ function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
+  if (edad >= 18 ){
+    console.log("Allowed");
+  } else if ( edad < 18 ){
+    console.log("Not allowed");
+  }
+ return
 }
+
   
 function conection(status) {
   //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
@@ -25,7 +32,16 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
+ if (status == 1){
+   console.log("online");
+ } else if (status == 2 ){
+   console.log("away");
+ } else if( status == 3){
+   console.log("Offline");
+ }
+ return
 }
+
 
 function saludo(idioma) {
   // Devuelve un saludo en tres diferentes lenguajes:
@@ -34,7 +50,18 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
+  if (idioma == "aleman"){
+    console.log("guten tag!");
+  } else if ( idioma == "mandarin"){
+    console.log("Ni hao!");
+  } else if ( idioma== "ingles"){
+    console.log("Hello!");
+  } else if ( idioma != "aleman" || idioma != "mandarin " || idioma != "ingles" ){
+    console.log("Hola!");
+  }
+ return 
 }
+
 
 function colors(color) {
   //La función recibe un color. Devolver el string correspondiente:
@@ -44,19 +71,44 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
+  if ( color == "blue" ){
+    console.log("this is blue");
+  } else if (color == "red" ){
+    console.log("this is red")
+  } else if ( color == "green"){
+    console.log("this in green")
+  } else if ( color == "orange"){
+    console.log("this is orange")
+  } else if (color != "blue " || color != "red" || color != "green" || color != "orange" ){
+    console.log("color not found")
+  }
+ return  
+
 }
 
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-}
+  if (numero == 10 || numero == 5){
+    return true
+  } else if (numero != 10 || numero !=5){
+    return false
+  }
+ 
+} 
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (numero < 50 || numero > 20){
+    return true
+  }
+   return false
+
 }
+
 
 function esEntero(numero) {
   // Devuelve "true" si "numero" es un entero (int/integer)
