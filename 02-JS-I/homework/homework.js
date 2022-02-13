@@ -180,8 +180,8 @@ function esPositivo(numero) {
     console.log("es postivio");
   } else if ( numero < 0) {
     console.log("es negativo");
-  }
-return false;
+  } else 
+return 
 }
 
 // falta terminar
@@ -252,8 +252,18 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-
+  if (letra >0 || letra <0 ) {
+    console.log("dato incorrecto");
+  } else if (letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u" ){
+    console.log("es una vocal");
+  } else if (letra !== "a" || letra !== "e" || letra !== "i" || letra !== "o" || letra !== "u"){
+    console.log("dato incorrecto")
+  }
+ return 
 }
+
+
+// falta terminar 
 
 
 
