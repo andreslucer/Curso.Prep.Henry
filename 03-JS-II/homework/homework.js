@@ -36,7 +36,7 @@ function conection(status) {
    console.log("online");
  } else if (status == 2 ){
    console.log("away");
- } else if( status != 1 || status !=2){
+ } else {
    console.log("Offline");
  }
  return
@@ -135,9 +135,6 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false.
-  if (num1 > num2 && num1 > num3 && num1 >0){
-    console.log("Número 1 es mayor y positivo")
-  } else if ( num1 < 0 || num2 ) 
 }
 
 function esPrimo(numero) {
@@ -163,13 +160,21 @@ function esVerdadero(valor){
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
-  //Escribe tu código aquí   
+  //Escribe tu código aquí
+   for (var i = 0 ; i <=10; i ++){
+     for (var j = 0 ;)
+   }
   
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
+  if (numero >=1000){
+    return true
+  } else {
+    return false
+  }
   
 }
 
