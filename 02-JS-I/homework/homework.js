@@ -134,7 +134,6 @@ function elevarAlCuadrado(num) {
   // ojo: No es raiz cuadrada!
   // Tu código:
   return Math.pow(num,2)
-  //falta terminar
 
 }
 
@@ -176,16 +175,16 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero > 0 ){
-    console.log("es mayor");
-  } else if (numero < 0){
-    console.log("es menor");
+  if (numero > 0){
+    console.log("es positivo")
+  } else if (numero < 0 ){
+    console.log("es negativo")
   } else if (numero == 0){
     return false
   }
- return
 }
 
+// falta terminar
 
 
 function agregarSimboloExclamacion(str) {
@@ -227,10 +226,8 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  var cuenta = lado * 3
-  return cuenta
- // falta terminar  
-
+  var cuenta = lado * 4
+  return cuenta 
 }
 
 
@@ -248,7 +245,6 @@ function deEuroAdolar(euro){
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
   return euro * 1.20
-
 }
 
 
