@@ -123,9 +123,10 @@ function esEntero(numero) {
 function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3, devuelve "fizz"
   // Si "numero" es divisible entre 5, devuelve "buzz"
-  // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
+  // Si "numero" es divsible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero 
-  var esdiv3 = numero % 2
+  if (numero %2==0) 
+
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -161,9 +162,12 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí
-   for (var i = 0 ; i <=10; i ++){
-     for (var j = 0 ;)
-   }
+  var i = 0
+  while (i <=10){
+    console.log(i)
+    i = i * 6
+
+  }
   
 }
 
