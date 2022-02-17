@@ -63,23 +63,24 @@ function divide(x, y) {
 
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
-  // De lo contrario, devuelve "false"
+  // De lo contrario , devuelve "false"
   // Tu código:
-    if ( x==y) {
+    if ( x===y) {
       return true; 
+    } else {
+      return false;
     }
-    return false;
 }
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1.length == str2.length) {
+  if (str1.length === str2.length) {
     return true;
-  }
+  } else {
   return false;
-   
+  }
 }
 
 function menosQueNoventa(num) {
@@ -98,8 +99,9 @@ function mayorQueCincuenta(num) {
   // Tu código:
   if (num > 50 ) {
     return true; 
-  }
+  } else {
   return false;
+  }
 }
 
 function obtenerResto(x, y) {
@@ -113,20 +115,22 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 == 0){
+  if (num % 2 === 0){
     return true; 
-  }
+  } else {
   return false;
+  }
 }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2==1){
+  if (num % 2===1){
     return true;
-  }
+  } else {
   return false;
+  }
 }
 
 function elevarAlCuadrado(num) {
@@ -176,9 +180,9 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if (numero > 0){
-    console.log("es positivo")
+    return "Es positivo"
   } else if (numero < 0 ){
-    console.log("es negativo")
+    return "Es negativo" 
   } else if (numero == 0){
     return false
   }
@@ -241,9 +245,9 @@ function areaDelTriangulo(base, altura){
 
 
 function deEuroAdolar(euro){
-  //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
-  //como parámetro un número de euros y calcule el cambio en dólares.
-  //Escribe tu código aquí
+    //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
+    //como parámetro un número de euros y calcule el cambio en dólares.
+    //Escribe tu código aquí
   return euro * 1.20
 }
 
@@ -255,13 +259,10 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   if (letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u" ) {
-    console.log("Es  vocal");
-  } else if (letra.length > 1 ){
-    console.log("dato incorrecto");
+    return "Es vocal"
   } else {
-    console.log("dato incorrecto");
-  } 
-  return;
+    return "Dato incorrecto"
+  }
 
 }
 

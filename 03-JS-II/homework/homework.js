@@ -25,7 +25,6 @@ function mayoriaDeEdad(edad) {
  return
 }
 
-  
 function conection(status) {
   //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
   //Cuando el estado es igual a 1, el usuario está "Online"
@@ -123,10 +122,17 @@ function esEntero(numero) {
 function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3, devuelve "fizz"
   // Si "numero" es divisible entre 5, devuelve "buzz"
-  // Si "numero" es divsible entre 3 y 5 (ambos), devuelve "fizzbuzz"
+  // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero 
-  if (numero %2==0) 
-
+  if (numero %5==0 && numero %3==0){
+    console.log("fizzbuzz");
+  } else if (numero %5==0){
+    console.log( "buzz");
+  } else if (numero %3==0){
+    console.log("fizz")
+  } else {
+    return numero
+  }  
 }
 
 function operadoresLogicos(num1, num2, num3) {
