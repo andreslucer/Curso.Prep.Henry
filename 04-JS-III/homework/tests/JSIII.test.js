@@ -19,7 +19,7 @@ const {
   mesesDelAño,
   mayorACien,
   breakStatement,
-  continueStatement
+  continueStatement,
 } = require('../homework');
 
 describe('devolverPrimerElemento(arr)', function() {

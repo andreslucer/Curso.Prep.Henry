@@ -32,9 +32,9 @@ function conection(status) {
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
  if (status == 1){
-   return "online";
+   return "Online";
  } else if (status == 2 ){
-   return "away";
+   return "Away";
  } else {
    return "Offline";
  }
@@ -49,9 +49,9 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
   if (idioma == "aleman"){
-    return"guten tag!";
+    return"Guten Tag!";
   } else if ( idioma == "mandarin"){
-    return"Ni hao!";
+    return"Ni Hao!";
   } else if ( idioma== "ingles"){
     return "Hello!";
   } else  {
@@ -148,7 +148,7 @@ function operadoresLogicos(num1, num2, num3) {
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false.
 if (num1 ==0 || num2 ===0 || num3===0){
-    return "error"
+    return "Error"
   }  else if (num1 < 0 || num2 < 0 || num3 <0 ){
       return "Hay negativos"
   }  else if (num1 > num2 && num1 > num3 && num1 >0){
@@ -165,7 +165,7 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  if (numero ===1 || numero === 0) return false;
+  if (numero ===1 || numero === 0) return true;
   for (var i=2; 1<numero; i++){
     if (numero % i===0) return false;
   }
@@ -199,7 +199,7 @@ return Tabladel6
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if (numero >=1000 && numero <10000 ){
+  if (numero >=99 && numero <1000 ){
     return true
   } else {
     return false
@@ -223,7 +223,7 @@ function doWhile(numero) {
 // No modificar nada debajo de esta línea
 // --------------------------------
 
-module.exports = {
+module.exports ={
   obtenerMayor,
   mayoriaDeEdad,
   conection,
