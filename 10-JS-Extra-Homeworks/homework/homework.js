@@ -50,6 +50,13 @@ function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
+  var caden = " "
+  for (i = 0 ; i <= cadena ; i ++){
+    if (cadena != "a" || cadena != "b" || cadena != "c"){
+      caden = caden + cadena
+    }
+  }
+  return caden
 }
 
 
