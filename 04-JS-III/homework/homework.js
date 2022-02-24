@@ -135,7 +135,7 @@ function multiplicarArgumentos() {
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-  suma=0
+   var suma=0
   for (var i=0; i < arreglo.length; i++){
     if (arreglo[i] > 18){
       suma = suma + 1
@@ -152,9 +152,9 @@ function diaDeLaSemana(numeroDeDia) {
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí
     if (numeroDeDia >=2 && numeroDeDia <=6){
-      return "es dia laboral"
+      return "Es dia laboral"
     } else {
-      return "es fin de semana"
+      return "Es fin de semana"
     }
   
   
